@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    
+      
+    
+
+   
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 200px 200px;
+      gap: 30px;
+    }
+
+    .card {
+      background-color:#f3dfc1;
+    }
+
+    .first {
+      grid-column: span 2;
+      height: 100px;
+      background-color: #f3dfc1;
+    }
+
+    h1{
+      font-family: 'Anton', sans-serif;
+      text-align: center;
+      font-size: 50px;
+      
+    }
+    
+    .options{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50px 10px;
+      gap: 30px;
+    
+      
+    }
+
+    .top{
+      background-color:#f3dfc1;
+      text-align: center;
+      height: 50px;
+      
+    }
+
+    
+
+  </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<body>
+  <div class="body">
+    <div class="options">
+      <div class="top"><p>Home</p></div>
+      <div class="top"><p>Latest</p></div>
+      <div class="top"><p>Search</p></div>
+      <div class="top"><p>More </p></div>
+    </div>
+    <div class="grid-container">
+      <div class="first card">
+        <h1> The Daily Prophet</h1>
+      </div>
+    
+      <div class="second card"></div>
+      <div class="third card"></div>
+      <div class="fourth card"></div>
+      <div class="fifth card"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
